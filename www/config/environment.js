@@ -23,14 +23,14 @@ module.exports = function(environment) {
 
       // Stratum mining endpoint
       StratumHost: 'example.net',
-      StratumPort: 8008,
+      StratumPort: 4444,
 
       // Fee and payout details
       PoolFee: '1%',
-      PayoutThreshold: '0.5 Ether',
+      PayoutThreshold: '10 ROL',
 
       // For network hashrate (change for your favourite fork)
-      BlockTime: 14.4
+      BlockTime: 14
     }
   };
 
