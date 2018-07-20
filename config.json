@@ -1,6 +1,6 @@
 {
 	"threads": 2,
-	"coin": "eth",
+	"coin": "roller",
 	"name": "main",
 
 	"proxy": {
@@ -19,7 +19,7 @@
 
 		"stratum": {
 			"enabled": true,
-			"listen": "0.0.0.0:8008",
+			"listen": "0.0.0.0:4444",
 			"timeout": "120s",
 			"maxConn": 8192
 		},
@@ -64,11 +64,6 @@
 		{
 			"name": "main",
 			"url": "http://127.0.0.1:8545",
-			"timeout": "10s"
-		},
-		{
-			"name": "backup",
-			"url": "http://127.0.0.2:8545",
 			"timeout": "10s"
 		}
 	],
