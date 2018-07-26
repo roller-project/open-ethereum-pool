@@ -15,7 +15,7 @@ module.exports = function(environment) {
 
     APP: {
       // API host and port
-      ApiUrl: '//example.net/',
+      ApiUrl: '//example.net:8080/',
 
       // HTTP mining endpoint
       HttpHost: 'http://example.net',
@@ -30,7 +30,7 @@ module.exports = function(environment) {
       PayoutThreshold: '10 ROL',
 
       // For network hashrate (change for your favourite fork)
-      BlockTime: 14
+      BlockTime: 15
     }
   };
 
