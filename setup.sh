@@ -12,9 +12,13 @@ cd ~
 git clone https://github.com/roller-project/pool.git
 cd ~/pool
 sudo make
+sudo mv ~/build/bin/open-ethereum-pool ~/build/bin/roller-pool
+sudo chmod +x  ~/build/bin/roller-pool
 #enable service
 sudo systemctl enable nginx
 sudo systemctl enable redis
+
+cd ~
 
 echo '=========================='
 echo 'Configuring pool service...'
@@ -24,7 +28,7 @@ cat > ~/pool.service << EOL
 Description=Roller Pool
 
 [Service]
-ExecStart=${vPATH}/build/bin/open-ethereum-pool ${vPATH}/config.json
+ExecStart=${vPATH}/build/bin/roller-pool ${vPATH}/config.json
 Restart=always
 
 [Install]
